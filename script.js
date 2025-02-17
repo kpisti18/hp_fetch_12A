@@ -6,9 +6,13 @@ async function fetchCharacters() {
         //console.log(response);
         const characters = await response.json();
         console.log(characters);
-        
+        displayCharacters(characters);
         
     } catch (error) {
         console.error('Hiba történt az adatok lekérésekor: ', error);
     }
+}
+
+function displayCharacters(characters) {
+
 }
